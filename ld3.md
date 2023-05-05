@@ -2,6 +2,7 @@
 Command line options:
 ## -v
 Invert the query; all lines that do *not* contain the given string will be printed.
+
 `grep -v a government/Alcohol_Problems/Session4-PDF.txt`
 Output:
 ```
@@ -156,6 +157,7 @@ reviewers.
 Here, it is printing all lines without a space. This translates to empty lines and last words in paragraphs.
 ## -n
 Print the number of each matching line, as well as the lines themselves.
+
 `grep -n legal government/Media/A_Perk_Of_Age.txt`
 Output:
 ```
@@ -231,11 +233,13 @@ Every line in every file in the biomed directory is searched for 'ion channels',
 
 `grep -r lovely .`
 Output:
-```./plos/journal.pbio.0020064.txt:        School of Medicine, New Haven, Connecticut, United States) says that ‘it is lovely to see
+```
+./plos/journal.pbio.0020064.txt:        School of Medicine, New Haven, Connecticut, United States) says that ‘it is lovely to see
 ```
 Here, the entire techincal folder (current working directory) is searched for 'lovely'
 ## -c
 Print only the count of lines with occurences, rather than the lines themselves.
+
 `grep -c 'circuit' biomed/gb-2001-2-4-research0012.txt`
 Output:
 ```
@@ -250,4 +254,5 @@ Output:
 ```
 44, the number of lines in the file that contain the phrase 'we', is printed.
 
+All options were found with ChatGPT: https://chat.openai.com
 
