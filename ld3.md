@@ -236,7 +236,7 @@ Output:
 ```
 ./plos/journal.pbio.0020064.txt:        School of Medicine, New Haven, Connecticut, United States) says that ‘it is lovely to see
 ```
-Here, the entire techincal folder (current working directory) is searched for 'lovely'
+Here, the entire technical folder (current working directory) is searched for 'lovely'
 ## -c
 Print only the count of lines with occurences, rather than the lines themselves.
 
