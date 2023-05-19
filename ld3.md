@@ -255,4 +255,45 @@ Output:
 44, the number of lines in the file that contain the phrase 'we', is printed.
 
 All options were found with ChatGPT: https://chat.openai.com
+The prompt used was "grep arguments", and the response was:
+
+When using the grep command in Linux or Unix-like systems, you can provide various arguments to customize its behavior and perform more specific searches. Here are some commonly used grep arguments:
+
+    Search pattern: Specify the pattern you want to search for.
+        Example: grep "hello" file.txt (searches for the word "hello" in "file.txt")
+
+    Case-insensitive search: Ignore case distinctions in the search pattern.
+        Argument: -i
+        Example: grep -i "hello" file.txt
+
+    Recursive search: Perform a recursive search in directories and subdirectories.
+        Argument: -r or -R
+        Example: grep -r "pattern" directory
+
+    Invert match: Display lines that do not match the given pattern.
+        Argument: -v
+        Example: grep -v "pattern" file.txt
+
+    Match whole word: Only match the whole word instead of partial matches.
+        Argument: -w
+        Example: grep -w "hello" file.txt
+
+    Print line number: Display the line numbers along with matching lines.
+        Argument: -n
+        Example: grep -n "pattern" file.txt
+
+    Specify file type: Limit the search to specific file types.
+        Argument: -e or --include
+        Example: grep "pattern" -e "*.txt" -e "*.log"
+
+    Suppress output: Only display the count of matching lines.
+        Argument: -c
+        Example: grep -c "pattern" file.txt
+
+    Regular expression search: Use regular expressions for advanced pattern matching.
+        Argument: -E or --extended-regexp
+        Example: grep -E "[0-9]{3}-[0-9]{3}-[0-9]{4}" file.txt
+
+These are just a few examples of the many arguments available with the grep command. You can explore more options and details by referring to the grep manual page using the man grep command in the terminal.
+
 
